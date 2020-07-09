@@ -1,38 +1,349 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-content {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.react_form {
+    background: #fff;
+    width: 850px;
+    border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    margin: 175px 0;
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.react_form h2 {
+    font-weight: 700;
+    font-size: 30px;
+    padding: 6px 0 0;
+    margin-bottom: 34px;
 }
 
-.App-link {
-  color: #61dafb;
+.react_form .form-left {
+    background: #607D8B;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px 40px;
+    position: relative;
+    width: 100%;
+    color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.react_form .form-left p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.react_form .form-left span {
+    font-weight: 700;
+}
+
+.react_form .form-left .text-2 {
+    margin: 20px 0 25px;
+}
+
+.react_form .form-left .account {
+    transition: background 0.8s;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    width: 180px;
+    border: none;
+    margin: 15px 0 50px 0px;
+    cursor: pointer;
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    appearance: unset;
+    -moz-appearance: unset;
+    -webkit-appearance: unset;
+    -o-appearance: unset;
+    -ms-appearance: unset;
+    outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+}
+
+.react_form .form-left .account:hover {
+    background: #7ebffb radial-gradient(circle, transparent 1%, #f7ce68 1%) center/15000%;
+}
+
+.react_form .form-left .form-left-last input {
+    padding: 15px;
+}
+
+.react_form .form-detail {
+    padding: 20px 40px;
+    position: relative;
+    width: 100%;
+}
+
+.react_form .form-detail h2 {
+    color: #607d8b;
+}
+
+.react_form .form-detail .form-group {
+    display: flex;
+    display: -webkit-flex;
+    margin: 0 -8px;
+}
+
+.react_form .form-detail .form-row {
+    width: 100%;
+    position: relative;
+}
+
+.react_form .form-detail .form-group .form-row.form-row-1 {
+    width: 50%;
+    padding: 0 8px;
+}
+
+.react_form .form-detail label {
+    font-weight: 600;
+    font-size: 15px;
+    color: #666;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.react_form .form-detail .form-row label#valid {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #53c83c;
+}
+
+.react_form .form-detail .form-row label#valid::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: 1px solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.react_form .form-detail .form-row label.error {
+    padding-left: 0;
+    margin-left: 0;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    background: none;
+    color: red;
+}
+
+.react_form .form-detail .form-row label.error::after {
+    content: "\f343";
+    font-family: "LineAwesome";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    right: 10px;
+    top: -31px;
+    color: red;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.react_form .form-detail .input-text {
+    margin-bottom: 27px;
+}
+
+.react_form .form-detail input {
+    width: 100%;
+    padding: 11.5px 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    appearance: unset;
+    -moz-appearance: unset;
+    -webkit-appearance: unset;
+    -o-appearance: unset;
+    -ms-appearance: unset;
+    outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #333;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+.react_form .form-detail .form-row input:focus {
+    border: 1px solid #53c83c;
+}
+
+.react_form .form-detail .form-checkbox {
+    margin-top: 1px;
+    position: relative;
+}
+
+.react_form .form-detail .form-checkbox input {
+    position: absolute;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    top: 0;
+}
+
+.react_form .form-detail .form-checkbox .checkmark {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.react_form .form-detail .form-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: 1px solid #607d8b;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: none;
+}
+
+.react_form .form-detail .form-checkbox input:checked~.checkmark::after {
+    display: block;
+}
+
+.react_form .form-detail .form-checkbox p {
+    margin-left: 34px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.react_form .form-detail .form-checkbox .text {
+    font-weight: 700;
+    color: #607d8b;
+    text-decoration: underline;
+}
+
+.react_form .form-detail .register {
+    background: #607d8b;
+    border-radius: 5px;
+    width: 130px;
+    border: none;
+    margin: 6px 0 50px 0px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.react_form .form-detail .register:hover {
+    background: #2f73a3;
+}
+
+.react_form .form-detail .form-row-last input {
+    padding: 12.5px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 991px) {
+    .react_form {
+        margin: 180px 20px;
+        flex-direction: column;
+        -o-flex-direction: column;
+        -ms-flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    .react_form .form-left {
+        width: auto;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .react_form .form-detail {
+        padding: 30px 20px 30px 20px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .react_form .form-detail .form-group {
+        flex-direction: column;
+        -o-flex-direction: column;
+        -ms-flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        margin: 0;
+    }
+    .react_form .form-detail .form-group .form-row.form-row-1 {
+        width: 100%;
+        padding: 0;
+    }
 }
