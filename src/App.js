@@ -48,7 +48,6 @@ const  App= () =>{
 					</label>
 				</div>
 				<div className="form-row-last">
-				
           <ButtonRipple onClick={e => console.log(e)}>Register</ButtonRipple>
 				</div>
 			</form>
