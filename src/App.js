@@ -48,6 +48,10 @@ const  App= () =>{
 					</label>
 				</div>
 				<div className="form-row-last">
+<<<<<<< HEAD
+=======
+				
+>>>>>>> origin/master
           <ButtonRipple onClick={e => console.log(e)}>Register</ButtonRipple>
 				</div>
 			</form>
